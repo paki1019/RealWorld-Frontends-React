@@ -11,7 +11,6 @@ const history = createBrowserHistory();
 
 class App extends Component {
 	render() {
-		console.log("done")
 		return (
 			<Router history={history}>
 				<Suspense fallback={<Loader />}>
