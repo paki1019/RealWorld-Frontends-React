@@ -6,6 +6,7 @@ import Loader from "./common/Loader";
 
 const Home = lazy(() => import("./routes/Home"));
 const Login = lazy(() => import("./routes/Login"));
+const Register = lazy(() => import("./routes/Register"));
 
 const history = createBrowserHistory();
 
@@ -19,6 +20,8 @@ class App extends Component {
 					<Route path="/home" component={Home} />
 					{/* Sign in */}
 					<Route path="/login" component={Login} />
+					{/* Sign up */}
+					<Route path="/register" component={Register} />
 				</Suspense>
 			</Router>
 		);
